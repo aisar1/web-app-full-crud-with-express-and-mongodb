@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+	
+	
+	
+</head>
+<body>
+	<a href="/">Register</a>
+
+	
+	
+	
+	
+	<%= todetailpage._id %> 	
+	
+    <%= todetailpage.name %>
+
+    <%= todetailpage.identification %>
+
+	
+	 <a href="/updtfrm/<%= todetailpage._id %>">Edit</a>
+	
+	
+	
+	<form action="/deletedata/<%= todetailpage._id %>?_method=Delete" method="post">
+		
+		<button>Delete</button>
+	</form>
+
+</body>
+</html>
